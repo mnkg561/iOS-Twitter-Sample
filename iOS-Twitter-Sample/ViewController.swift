@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +23,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onClickMiniTwitterButton(_ sender: Any) {
+        let client = TwitterOAuth1Client.sharedInstance
+        client?.redirectUserToTwitter(success: {
+            print("I've logged in! ")
+            
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        }, failure: { (error: Error) in
+            print("Error \(error)")
+        })
+    }
 }
 
