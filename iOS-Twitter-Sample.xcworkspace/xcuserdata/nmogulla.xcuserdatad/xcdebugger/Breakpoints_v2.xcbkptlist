@@ -9,76 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOS_Twitter_Sample.TwitterOAuth1Client.getHomeTimeLine (success2 : (Swift.Array&lt;iOS_Twitter_Sample.Tweet&gt;) -&gt; (), failure2 : (Swift.Error) -&gt; ()) -&gt; ()"
-                  moduleName = "iOS-Twitter-Sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nmogulla/Desktop/ios_playground/codePath/Week3/iOS-Twitter-Sample/iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-                  timestampString = "513883079.955789"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "260">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOS_Twitter_Sample.TwitterOAuth1Client.(getHomeTimeLine (success2 : (Swift.Array&lt;iOS_Twitter_Sample.Tweet&gt;) -&gt; (), failure2 : (Swift.Error) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "iOS-Twitter-Sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nmogulla/Desktop/ios_playground/codePath/Week3/iOS-Twitter-Sample/iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-                  timestampString = "513883079.957412"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "31">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIViewController.h"
             timestampString = "513759099.308279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
             endingLineNumber = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,59 +40,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
+            timestampString = "513904691.371935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "userDetails(success1:failure1:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "iOS_Twitter_Sample.TwitterOAuth1Client.userDetails (success1 : (iOS_Twitter_Sample.User) -&gt; (), failure1 : (Swift.Error) -&gt; ()) -&gt; ()"
                   moduleName = "iOS-Twitter-Sample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nmogulla/Desktop/ios_playground/codePath/Week3/iOS-Twitter-Sample/iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-                  timestampString = "513883079.993681"
+                  timestampString = "514079159.639325"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "31">
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "iOS_Twitter_Sample.TwitterOAuth1Client.(userDetails (success1 : (iOS_Twitter_Sample.User) -&gt; (), failure1 : (Swift.Error) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "iOS-Twitter-Sample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nmogulla/Desktop/ios_playground/codePath/Week3/iOS-Twitter-Sample/iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-                  timestampString = "513883079.995322"
+                  timestampString = "514079159.641231"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "31">
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -167,13 +87,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
+            filePath = "iOS-Twitter-Sample/TwitterHomeLineController.swift"
+            timestampString = "513988521.454087"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -183,13 +103,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
+            filePath = "iOS-Twitter-Sample/TwitterHomeLineController.swift"
+            timestampString = "513988521.454087"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -199,13 +119,27 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
+            filePath = "../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewController.h"
+            timestampString = "513931640.625348"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
+            startingLineNumber = "5"
+            endingLineNumber = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS-Twitter-Sample/ReplyTableViewController.swift"
+            timestampString = "514069667.787513"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "replyButtonClicked()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -215,61 +149,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
+            filePath = "iOS-Twitter-Sample/DetailTweetTableViewController.swift"
+            timestampString = "514072563.589363"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOS-Twitter-Sample/TwitterOAuth1Client.swift"
-            timestampString = "513892947.770969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "getHomeTimeLine(success2:failure2:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

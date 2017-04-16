@@ -46,42 +46,25 @@ class TwitterOAuth1Client: BDBOAuth1SessionManager {
         // step 1
         fetchAccessToken(withPath: "oauth/access_token", method: "POST", requestToken: requestToken, success: { (accessToken: BDBOAuth1Credential?) in
             print("access token \(accessToken!.token))")
-         
-             //This works perfectly fine if i remove self.loginSuccess?() call statement
-             
-            self.get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
-                let dictionaries =  response as? [NSDictionary]
-                let tweets = Tweet.tweetWithArray(dictionaries: dictionaries!)
-                print("i'm inside")
-                
-                for tweet in tweets {
-                    print(tweet.text)
-                }
-
-            }, failure: { (task: URLSessionDataTask?, error: Error) in
-                print(error)
-            })
- 
-            
             
             self.userDetails(success1:  { (user: User) in
                 User.currentUser = user
                 self.loginSuccess?()
             }, failure1: { (error: Error) in
                 
-                 self.loginFailure?(error)
+                self.loginFailure?(error)
             })
             
-                       
+            
         }) { (error: Error!) in
-        print("error occured")
+            print("error occured")
             self.loginFailure?(error)
         }
         
     }
     
     func userDetails(success1: @escaping (User) -> (), failure1: @escaping (Error) -> ()){
-   get("1.1/account/verify_credentials.json", parameters: nil, progress:nil, success: { (task: URLSessionDataTask, response: Any?) in
+        get("1.1/account/verify_credentials.json", parameters: nil, progress:nil, success: { (task: URLSessionDataTask, response: Any?) in
             let userDictionary = response as? NSDictionary
             if let userDictionary = userDictionary {
                 let user = User(dictionary: userDictionary)
@@ -95,30 +78,55 @@ class TwitterOAuth1Client: BDBOAuth1SessionManager {
         
     }
     
-    func getHomeTimeLine(success2: @escaping ([Tweet]) -> (), failure2: @escaping (Error) -> ()){
+    func testHomeLine(success3: @escaping ([Tweet]) -> (), failure3: @escaping (Error) -> ()){
         
-        print("i'm getting call")
-    
-
-        self.get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
-            
+        get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (urlTask: URLSessionDataTask, response: Any?) in
             let dictionaries =  response as? [NSDictionary]
             let tweets = Tweet.tweetWithArray(dictionaries: dictionaries!)
-            print("i'm inside")
+            success3(tweets)
             
-            for tweet in tweets {
-                print(tweet.text)
-            }
-            success2(tweets)
             
-        }, failure: { (task: URLSessionDataTask!, error: Error!) in
-            
-            print("i'm inside failure")
-            print(error.localizedDescription)
-            failure2(error)
-        })
-
+        }) { (urlTask: URLSessionDataTask?, error: Error) in
+            failure3(error)
+        }
     }
-
+    
+    func sendNewTweet(newTweetText: String){
+    
+        post("1.1/statuses/update.json", parameters: ["status": newTweetText], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            print("new tweet is succesful ")
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func replyToTweet(replyTweetText: String, tweetId: String){
+        
+        post("1.1/statuses/update.json", parameters: ["status": replyTweetText, "in_reply_to_status_id": tweetId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            print("reply tweet is succesful ")
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    func retweet(twitterId: String, apiOperationString: String){
+        post("1.1/statuses/\(apiOperationString)/\(twitterId).json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+       
+            print("retweet api is succesful ")
+        }) { (task: URLSessionDataTask?, error: Error) in
+        print(error.localizedDescription)
+        }
+    }
+    
+    
+    func makeItFavorite(twitterId: String, apiOperationString: String){
+        post("1.1/favorites/\(apiOperationString).json", parameters: ["id": twitterId], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+             print(" favorites api is succesful ")
+            
+        }) { (task: URLSessionDataTask?, error: Error) in
+           print(error.localizedDescription)
+        }
+    }
     
 }

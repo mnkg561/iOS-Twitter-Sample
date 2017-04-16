@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+   
+        /*
         if User.currentUser != nil {
             print("Hurray!! No login required")
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -24,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("User has to login again")
         }
-        
+     */
         
         return true
     }

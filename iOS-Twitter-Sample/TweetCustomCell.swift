@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class TweetCustomCell: UITableViewCell {
 
@@ -14,11 +15,16 @@ class TweetCustomCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tweetTextLabel: UILabel!
     @IBOutlet weak var tweetedByLabel: UILabel!
+
     
     var tweet: Tweet! {
         didSet{
-          tweetTextLabel.text = tweet.text
-            
+            print("i got the call")
+            tweetTextLabel.text = tweet.text
+            tweetedByLabel.text = tweet.name
+            userNameLabel.text = tweet.screenName
+            ownerImageView.setImageWith(tweet.profileURL!)
+           
         }
     }
     
