@@ -15,7 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-   
+        
+       
+        if User.currentUser != nil {
+            
+            
+            
+        let hamburgerViewController = window!.rootViewController as! HamburgerViewController
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let menuViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        
+         menuViewController.hamburgerViewController = hamburgerViewController
+        
+        hamburgerViewController.menuViewController = menuViewController
+       
+        } else {
+            
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "ViewController")
+            window?.rootViewController = vc
+
+        }
+
+   /*
 
         if User.currentUser != nil {
             print("Hurray!! No login required")
@@ -25,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("User has to login again")
         }
-  
+  */
         
         return true
     }

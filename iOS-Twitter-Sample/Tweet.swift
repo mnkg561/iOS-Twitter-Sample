@@ -52,21 +52,6 @@ class Tweet: NSObject {
         if let profileUrlString = profileUrlString {
             profileURL = URL(string: profileUrlString)
         }
-        if (text?.components(separatedBy: "https://t.co").count == 2) {
-        
-            if let range = text?.range(of: "https://t.co") {
-                let postImageUrlString = text?.substring(from: range.lowerBound)
-                if let postImageUrlString = postImageUrlString {
-                    print(postImageUrlString)
-                    postImageURL = URL(string: postImageUrlString)
-                }
-            }
-        }
-        
-       
-   
-        
-        
         
     }
     

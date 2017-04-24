@@ -129,4 +129,32 @@ class TwitterOAuth1Client: BDBOAuth1SessionManager {
         }
     }
     
+    func getPresentUserProfile(screenName: String, success: @escaping (NSDictionary) -> (), failure: @escaping (Error) -> ()){
+    
+        get("1.1/users/show.json", parameters: ["screen_name": screenName], progress: nil, success: { (urlTask: URLSessionDataTask, response: Any?) in
+            let dictionary =  response as? NSDictionary
+            success(dictionary!)
+            
+        }) { (urlTask: URLSessionDataTask?, error: Error) in
+            print(error.localizedDescription)
+            failure(error)
+        }
+        
+    }
+    
+    func getUserTimeLine(screenName: String, success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()){
+        
+        
+        get("1.1/statuses/user_timeline.json", parameters: ["screen_name": screenName, "exclude_replies": true, "include_rts": false], progress: nil, success: { (urlTask: URLSessionDataTask, response: Any?) in
+            let dictionaries =  response as? [NSDictionary]
+            let tweets = Tweet.tweetWithArray(dictionaries: dictionaries!)
+            success(tweets)
+            
+        }) { (urlTask: URLSessionDataTask?, error: Error) in
+            print(error.localizedDescription)
+            failure(error)
+        }
+        
+    }
+    
 }

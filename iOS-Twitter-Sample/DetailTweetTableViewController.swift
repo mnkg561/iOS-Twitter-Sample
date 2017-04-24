@@ -100,7 +100,7 @@ class DetailTweetTableViewController: UITableViewController {
     
 
     @IBAction func onClickReplyButton(_ sender: Any) {
-        print("somebody tapped me")
+       
         
         replyTweet(replybutton)
     }

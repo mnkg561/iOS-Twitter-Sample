@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS-Twitter-Sample/TwitterHomeLineController.swift"
-            timestampString = "513988521.454087"
+            timestampString = "514676783.318299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS-Twitter-Sample/TwitterHomeLineController.swift"
-            timestampString = "513988521.454087"
+            timestampString = "514676783.318299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -156,6 +156,70 @@
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS-Twitter-Sample/UserProfileViewController.swift"
+            timestampString = "514620110.683891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "loadUserProfileItems(requestedScreenName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Twitter_Sample.UserProfileViewController.loadUserProfileItems (requestedScreenName : Swift.String) -&gt; ()"
+                  moduleName = "iOS-Twitter-Sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nmogulla/Desktop/ios_playground/codePath/Week3/iOS-Twitter-Sample/iOS-Twitter-Sample/UserProfileViewController.swift"
+                  timestampString = "514611132.185539"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Twitter_Sample.UserProfileViewController.(loadUserProfileItems (requestedScreenName : Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "iOS-Twitter-Sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nmogulla/Desktop/ios_playground/codePath/Week3/iOS-Twitter-Sample/iOS-Twitter-Sample/UserProfileViewController.swift"
+                  timestampString = "514611132.187748"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS-Twitter-Sample/UserProfileViewController.swift"
+            timestampString = "514620110.683891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "loadUserProfileItems(requestedScreenName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

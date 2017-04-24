@@ -16,15 +16,18 @@ PODS:
     - AFNetworking/NSURLSession
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
+  - SwiftyGif (3.0.3)
 
 DEPENDENCIES:
   - AFNetworking
   - BDBOAuth1Manager
+  - SwiftyGif
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
+  SwiftyGif: 89a0bb19709bdb6990e10405ad456d8bea804a65
 
-PODFILE CHECKSUM: b09ecab25f66a612ffbe59568066b0451dbe29cc
+PODFILE CHECKSUM: 5e2bab167702cfa983d31e64821749b90c6e985c
 
 COCOAPODS: 1.2.0

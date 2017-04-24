@@ -7,6 +7,7 @@ target 'iOS-Twitter-Sample' do
 
     pod 'AFNetworking'
     pod 'BDBOAuth1Manager'
+    pod 'SwiftyGif'
 
   # Pods for iOS-Twitter-Sample
 

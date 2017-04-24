@@ -1,44 +1,42 @@
 //
-//  TweetCustomCell.swift
+//  ProfileTweetCell.swift
 //  iOS-Twitter-Sample
 //
-//  Created by Mogulla, Naveen on 4/12/17.
+//  Created by Mogulla, Naveen on 4/21/17.
 //  Copyright © 2017 Mogulla, Naveen. All rights reserved.
 //
 
 import UIKit
-import AFNetworking
 
-class TweetCustomCell: UITableViewCell {
+class ProfileTweetCell: UITableViewCell {
 
-    @IBOutlet weak var ownerImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var screenNameLabel: UILabel!
+    
     @IBOutlet weak var tweetTextLabel: UILabel!
-    @IBOutlet weak var tweetedByLabel: UILabel!
-
+    
     @IBOutlet weak var tweetCount: UILabel!
     
     @IBOutlet weak var likeCount: UILabel!
-    
     var tweet: Tweet! {
         didSet{
-            tweetTextLabel.text = tweet.text
-            tweetedByLabel.text = tweet.name
-            userNameLabel.text = tweet.screenName
-            ownerImageView.setImageWith(tweet.profileURL!)
-            likeCount.text = String(tweet.favoritesCount)
-            tweetCount.text = String(tweet.retweetCount)
            
+
+            nameLabel.text = tweet.name
+            screenNameLabel.text = tweet.screenName
+            tweetTextLabel.text = tweet.text
+            profileImageView.setImageWith(tweet.profileURL!)
+            tweetCount.text = String(tweet.retweetCount)
+            likeCount.text = String(tweet.favoritesCount)
         }
     }
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
